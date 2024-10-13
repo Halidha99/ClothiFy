@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="491.0" prefWidth="1154.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.EmployeeRegisterationFormController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="624.0" prefWidth="1154.0" style="-fx-background-color: #1E2D3B;">
+         <children>
+            <ImageView fitHeight="503.0" fitWidth="482.0" layoutX="285.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/article_How-to-merchandise-a-clothing-store-color-strategy.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#91a7bd59" height="230.0" layoutX="18.0" layoutY="385.0" strokeType="INSIDE" strokeWidth="2.0" width="1117.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8315009474754333" green="0.8696114420890808" blue="0.9052631855010986" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6395711302757263" green="0.7671539783477783" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="7.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-clothes-shop-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblSoreName" layoutX="53.0" layoutY="30.0" prefHeight="27.0" prefWidth="175.0" text="Glamour Grove">
+               <font>
+                  <Font name="Book Antiqua Bold" size="22.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7684210538864136" green="0.2561403512954712" blue="0.2561403512954712" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Rectangle arcHeight="25.0" arcWidth="25.0" height="70.0" layoutX="-119.0" layoutY="70.4" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="309.0" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="-119.0" AnchorPane.topAnchor="70.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13725490868091583" green="0.30980393290519714" blue="0.48235294222831726" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5686274766921997" green="0.6549019813537598" blue="0.7411764860153198" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="26.0" layoutY="77.0" text="Employee Register">
+               <font>
+                  <Font name="Book Antiqua Bold" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#91a7bd59" height="321.0" layoutX="210.0" layoutY="44.0" strokeType="INSIDE" strokeWidth="2.0" width="931.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8315009474754333" green="0.8696114420890808" blue="0.9052631855010986" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.6395711302757263" green="0.7671539783477783" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Separator layoutX="7.0" layoutY="374.0" prefHeight="3.0" prefWidth="1126.0" style="-fx-background-color: rgba(255, 218, 121,1.0);" />
+            <TableView fx:id="empTable" layoutX="250.0" layoutY="118.0" prefHeight="230.0" prefWidth="874.0" styleClass="dashboard-colour2" stylesheets="@../Css/Table.css">
+              <columns>
+                <TableColumn fx:id="empColId" prefWidth="82.4000244140625" text="ID" />
+                <TableColumn fx:id="empColName" prefWidth="131.20001220703125" text="Name" />
+                  <TableColumn fx:id="empColNic" prefWidth="124.00003051757812" text="NIC" />
+                  <TableColumn fx:id="empColAddress" prefWidth="128.0" text="Address" />
+                  <TableColumn fx:id="empColDob" prefWidth="118.39996337890625" text="Date Of Birth" />
+                  <TableColumn fx:id="empColContact" prefWidth="103.99993896484375" text="Contact" />
+                  <TableColumn fx:id="empColBankAccountNo" prefWidth="103.99993896484375" text="Bank Account No" />
+                  <TableColumn fx:id="empColBankBranch" prefWidth="103.99993896484375" text="Branch" />
+              </columns>
+            </TableView>
+            <Label layoutX="44.0" layoutY="414.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Employee Id  :" textFill="#fffefe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="47.0" layoutX="62.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-employee-100.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtEmpId" layoutX="202.0" layoutY="415.0" prefHeight="31.0" prefWidth="120.0" promptText="ID" style="-fx-background-color: rgba(245, 246, 250,1.0);">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="44.0" layoutY="468.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Name  :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmpname" layoutX="202.0" layoutY="469.0" prefHeight="31.0" prefWidth="187.0" promptText="Kamal" style="-fx-background-color: rgba(245, 246, 250,1.0);">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="426.0" layoutY="407.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Address  :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmpAddress" layoutX="570.0" layoutY="404.0" prefHeight="31.0" prefWidth="187.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="Galle">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="39.0" layoutY="521.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Tittle : " textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmpContact" layoutX="568.0" layoutY="531.0" prefHeight="31.0" prefWidth="187.0" promptText="Kamal" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="0776578963">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="426.0" layoutY="471.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Date Of Birth :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbTitle" layoutX="197.0" layoutY="522.0" prefHeight="31.0" prefWidth="187.0" promptText="MR" />
+            <DatePicker fx:id="dobEmpDate" layoutX="568.0" layoutY="465.0" prefHeight="26.0" prefWidth="187.0" promptText="1997.10.25" />
+            <Label layoutX="426.0" layoutY="534.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Contact :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="782.0" layoutY="407.0" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Bank Account No  :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmpBankAcc" layoutX="935.0" layoutY="404.0" prefHeight="31.0" prefWidth="168.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="80065789623">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="775.0" layoutY="465.0" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Bank Branch  :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmpBankBranch" layoutX="935.0" layoutY="462.0" prefHeight="31.0" prefWidth="168.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="Galle">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <JFXButton layoutX="1052.0" layoutY="567.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="72.0" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="953.0" layoutY="567.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: blue;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="857.0" layoutY="567.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="72.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="771.0" layoutY="566.0" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="72.0" style="-fx-background-color: #f39c12;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Button layoutX="6.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="35.0" prefWidth="75.0" text="Back">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-back-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="txtSearchBar" layoutX="465.0" layoutY="64.0" prefHeight="26.0" prefWidth="469.0" text="Search Employee" />
+            <JFXButton layoutX="947.0" layoutY="59.0" onAction="#txtIdSearchOnAction" prefHeight="35.0" prefWidth="72.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="22.0" fitWidth="19.0" layoutX="906.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-search-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="44.0" layoutY="571.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="NIC  :" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmpNic" layoutX="188.0" layoutY="568.0" prefHeight="31.0" prefWidth="199.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+         <rotationAxis>
+            <Point3D x="25.0" z="1.0" />
+         </rotationAxis>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1E2D3B;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.LoginFormController">
+   <children>
+      <Label layoutX="81.0" layoutY="14.0" prefHeight="18.0" prefWidth="122.0" text="Label" />
+      <ImageView fitHeight="410.0" fitWidth="289.0" layoutX="5.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/article_How-to-merchandise-a-clothing-store-color-strategy.jpg" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Line endX="100.0" layoutX="221.0" layoutY="116.0" startX="100.0" startY="167.0" stroke="WHITE" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfdff" height="400.0" layoutX="326.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+      <Label fx:id="lblLogin" layoutX="386.0" layoutY="33.0" prefHeight="18.0" prefWidth="148.0" text="Login" textFill="#201e1e">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmail" focusColor="#080404" layoutX="403.0" layoutY="129.0" prefHeight="30.0" prefWidth="187.0" promptText="Email" unFocusColor="#158bc1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="338.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-email1-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="346.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-password1-50.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="txtpassword" layoutX="403.0" layoutY="199.0" prefHeight="26.0" prefWidth="187.0" promptText="Password" unFocusColor="#158bc1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="394.0" layoutY="283.0" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: black;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Hyperlink fx:id="txtFGPassword" layoutX="460.0" layoutY="242.0" prefHeight="24.0" prefWidth="131.0" text="Forget Your password?" />
+      <ImageView fitHeight="57.0" fitWidth="67.0" layoutX="467.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-users-50.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#dbe3eaa1" height="318.0" layoutX="34.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="258.0" />
+      <Text fill="#151515" layoutX="50.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you are not yet" wrappingWidth="226.39995117187505">
+         <font>
+            <Font name="Book Antiqua" size="27.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblSoreName" layoutX="75.0" layoutY="115.0" prefHeight="27.0" prefWidth="175.0" text="Glamour Grove">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2045454491268505">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7684210538864136" green="0.2561403512954712" blue="0.2561403512954712" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.21052631735801697" green="0.18011696636676788" blue="0.18011696636676788" opacity="0.7799999713897705" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="132.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-clothes-shop-64.png" />
+         </image>
+      </ImageView>
+      <Text fill="#151515" layoutX="103.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registered" wrappingWidth="139.9999877929688">
+         <font>
+            <Font name="Book Antiqua" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#151515" layoutX="115.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now" wrappingWidth="96.345703125">
+         <font>
+            <Font name="Book Antiqua" size="27.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="106.0" layoutY="285.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: rgba(22, 160, 133,1.0);" text="Register" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblLogin" layoutX="348.0" layoutY="340.0" prefHeight="18.0" prefWidth="242.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
