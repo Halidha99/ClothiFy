@@ -1,5 +1,4 @@
 package edu.icet.util;
 
-public class CrudUtil {
-
+public enum ServiceType {
 }
