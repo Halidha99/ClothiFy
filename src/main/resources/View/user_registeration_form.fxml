@@ -16,7 +16,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.UserRegisterationFormController">
    <children>
       <AnchorPane prefHeight="643.0" prefWidth="982.0" style="-fx-background-color: #1E2D3B;">
@@ -141,9 +140,9 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <JFXButton layoutX="495.0" layoutY="154.0" onAction="#btnAdminCheckOnAction" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #f39c12;" text="Check" textFill="WHITE">
+            <JFXButton layoutX="498.0" layoutY="149.0" onAction="#btnAdminCheckOnAction" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: #f39c12;" text="Check" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="10.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
             <Label layoutX="637.0" layoutY="162.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Email" textFill="WHITE">
@@ -165,9 +164,9 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnSend" buttonType="RAISED" disable="true" layoutX="458.0" layoutY="383.0" onAction="#btnOtpOnAction" opacity="0.71" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: rgba(22, 160, 133,1.0);" text="Send" textFill="WHITE">
+            <JFXButton fx:id="btnSend" buttonType="RAISED" disable="true" layoutX="458.0" layoutY="383.0" onAction="#btnOtpOnAction" opacity="0.99" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: rgba(22, 160, 133,1.0);" text="Send" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="13.0" />
+                  <Font name="System Bold" size="15.0" />
                </font>
             </JFXButton>
             <Label layoutX="246.0" layoutY="447.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="User Type" textFill="WHITE">
