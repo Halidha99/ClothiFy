@@ -1,4 +1,4 @@
 package edu.icet.entity;
 
-public class Employee {
+public class ItemEntity {
 }

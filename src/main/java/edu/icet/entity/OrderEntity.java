@@ -1,4 +1,4 @@
 package edu.icet.entity;
 
-public class Item {
+public class OrderEntity {
 }

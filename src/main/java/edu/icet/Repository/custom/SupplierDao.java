@@ -1,4 +1,4 @@
 package edu.icet.Repository.custom;
 
-public interface OrderDetailsDao {
+public interface SupplierDao {
 }
