@@ -58,6 +58,11 @@ public class SupplierFormController {
     }
 
     @FXML
+    void btnSearchOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
     void btnUpdateOnAction(ActionEvent event) {
 
     }

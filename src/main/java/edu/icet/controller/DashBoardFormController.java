@@ -23,6 +23,16 @@ public class DashBoardFormController {
     private Label lblUserType;
 
     @FXML
+    void btnEmployeeOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
+    void btnItemOnAction(MouseEvent event) {
+
+    }
+
+    @FXML
     void btnLogOutOnAction(ActionEvent event) {
 
     }
@@ -51,5 +61,7 @@ public class DashBoardFormController {
     void btnSupplierOnAction(MouseEvent event) {
 
     }
+
+
 
 }

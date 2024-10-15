@@ -17,7 +17,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.AddItemFormController">
    <children>
       <AnchorPane prefHeight="641.0" prefWidth="1159.0" style="-fx-background-color: #1E2D3B;">
@@ -113,7 +112,7 @@
                </stroke>
             </Rectangle>
             <Separator layoutX="7.0" layoutY="374.0" prefHeight="3.0" prefWidth="1126.0" style="-fx-background-color: rgba(255, 218, 121,1.0);" />
-            <TableView fx:id="itemTable" layoutX="214.0" layoutY="126.0" prefHeight="222.0" prefWidth="910.0" styleClass="dashboard-colour2" stylesheets="@../Css/Table.css">
+            <TableView fx:id="itemTable" layoutX="214.0" layoutY="126.0" prefHeight="222.0" prefWidth="910.0" style="-fx-background-color: #0288d1;" stylesheets="@../Css/Table.css">
                <columns>
                   <TableColumn fx:id="itemColId" prefWidth="82.4000244140625" text="Code" />
                   <TableColumn fx:id="itemColdescription" prefWidth="114.40005493164062" text="Description" />
@@ -166,11 +165,6 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="txtItemQty" layoutX="194.0" layoutY="518.0" prefHeight="31.0" prefWidth="187.0" promptText="Kamal" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="10">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </TextField>
             <Label layoutX="426.0" layoutY="471.0" prefHeight="18.0" prefWidth="120.0" style="-fx-background-color: rgba(39, 60, 117,1.0);" text="Size :" textFill="WHITE">
                <font>
                   <Font size="17.0" />
@@ -246,17 +240,10 @@
                   <Font size="15.0" />
                </font>
             </TextField>
-            <TextField fx:id="txtItemSize" layoutX="570.0" layoutY="462.0" prefHeight="31.0" prefWidth="187.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="Xxl">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </TextField>
-            <TextField fx:id="txtItemType" layoutX="575.0" layoutY="531.0" prefHeight="31.0" prefWidth="187.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="T-shirt">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </TextField>
             <ComboBox fx:id="cmbSupplier" layoutX="944.0" layoutY="408.0" prefHeight="26.0" prefWidth="168.0" promptText="S001" style="-fx-background-color: rgba(245, 246, 250,1.0);" />
+            <ComboBox layoutX="570.0" layoutY="465.0" prefHeight="26.0" prefWidth="187.0" promptText="XXL" style="-fx-background-color: rgba(245, 246, 250,1.0);" />
+            <ComboBox layoutX="575.0" layoutY="534.0" prefHeight="26.0" prefWidth="187.0" promptText="Shirt" style="-fx-background-color: rgba(245, 246, 250,1.0);" />
+            <ComboBox layoutX="191.0" layoutY="521.0" prefHeight="26.0" prefWidth="199.0" promptText="10" style="-fx-background-color: rgba(245, 246, 250,1.0);" />
          </children>
       </AnchorPane>
    </children>

@@ -23,9 +23,6 @@ public class UserRegisterationFormController {
     private JFXCheckBox checkBoxUserPassword;
 
     @FXML
-    private JFXTextField cmbUserType;
-
-    @FXML
     private Label lblSoreName;
 
     @FXML
@@ -48,11 +45,6 @@ public class UserRegisterationFormController {
 
     @FXML
     private JFXTextField txtUserPassword;
-
-    @FXML
-    void btnAdminCheckOnAction(ActionEvent event) {
-
-    }
 
     @FXML
     void btnBackOnAction(ActionEvent event) {

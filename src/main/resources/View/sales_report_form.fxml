@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="520.0" prefWidth="746.0" style="-fx-background-color: #1E2D3B;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.SalesReportFormController">
+   <children>
+      <Text fill="WHITE" layoutX="169.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" wrappingWidth="89.0">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="176.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit :" wrappingWidth="89.0">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtsalesProfit" layoutX="232.0" layoutY="107.0" prefHeight="26.0" prefWidth="135.0" promptText="6500" style="-fx-background-color: rgba(245, 246, 250,1.0);" unFocusColor="#ff0303" />
+      <Text fill="WHITE" layoutX="422.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Count :" wrappingWidth="134.5999755859375">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtsaleCount" layoutX="536.0" layoutY="64.0" prefHeight="26.0" prefWidth="98.0" promptText="400" style="-fx-background-color: rgba(245, 246, 250,1.0);" unFocusColor="#f70101" />
+      <DatePicker fx:id="DateSales" layoutX="229.0" layoutY="65.0" prefHeight="10.0" prefWidth="175.0" promptText="2023.10.26" />
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-clothes-shop-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblSoreName" layoutX="57.0" layoutY="19.0" prefHeight="27.0" prefWidth="175.0" text="Glamour Grove">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7684210538864136" green="0.2561403512954712" blue="0.2561403512954712" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" height="70.0" layoutX="-115.0" layoutY="59.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="275.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.13725490868091583" green="0.30980393290519714" blue="0.48235294222831726" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5686274766921997" green="0.6549019813537598" blue="0.7411764860153198" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="30.0" layoutY="66.0" text="Sales Report">
+         <font>
+            <Font name="Book Antiqua Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="47.0" layoutX="66.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-report-100.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#91a7bd59" height="244.0" layoutX="76.0" layoutY="239.0" strokeType="INSIDE" strokeWidth="2.0" width="586.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8315009474754333" green="0.8696114420890808" blue="0.9052631855010986" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6395711302757263" green="0.7671539783477783" blue="0.8947368264198303" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <BubbleChart fx:id="salesChart" layoutX="84.0" layoutY="245.0" prefHeight="230.0" prefWidth="570.0" style="-fx-background-color: #79c8d2;" title="Sales Chart">
+        <xAxis>
+          <NumberAxis side="BOTTOM" tickLabelFill="#131212" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BubbleChart>
+      <JFXButton layoutX="15.0" layoutY="169.0" onAction="#btnDailyReportOnAction" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #ffc107;" text="Daily Report" textFill="#050505">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="193.0" layoutY="172.0" onAction="#btnAnualReportOnAction" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: #ffc107;" text="Anual Report" textFill="#050505">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="516.0" layoutY="172.0" onAction="#btnReturnReportOnAction" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #ffc107;" text="Return Report" textFill="#050505">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="348.0" layoutY="172.0" onAction="#btnMonthlyReportOnAction" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #ffc107;" text="Monthly Report" textFill="#050505">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

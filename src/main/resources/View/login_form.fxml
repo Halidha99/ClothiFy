@@ -105,7 +105,7 @@
             <Font name="Book Antiqua" size="27.0" />
          </font>
       </Text>
-      <JFXButton layoutX="106.0" layoutY="285.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: rgba(22, 160, 133,1.0);" text="Register" textFill="#fcfafa">
+      <JFXButton fx:id="btnRegister" layoutX="106.0" layoutY="285.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: rgba(22, 160, 133,1.0);" text="Register" textFill="#fcfafa">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

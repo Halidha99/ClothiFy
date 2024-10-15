@@ -19,7 +19,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="491.0" prefWidth="1154.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.EmployeeRegisterationFormController">
    <children>
       <AnchorPane layoutY="-4.0" prefHeight="624.0" prefWidth="1154.0" style="-fx-background-color: #1E2D3B;">
@@ -115,7 +114,7 @@
                </stroke>
             </Rectangle>
             <Separator layoutX="7.0" layoutY="374.0" prefHeight="3.0" prefWidth="1126.0" style="-fx-background-color: rgba(255, 218, 121,1.0);" />
-            <TableView fx:id="empTable" layoutX="250.0" layoutY="118.0" prefHeight="230.0" prefWidth="874.0" styleClass="dashboard-colour2" stylesheets="@../Css/Table.css">
+            <TableView fx:id="empTable" layoutX="250.0" layoutY="118.0" prefHeight="230.0" prefWidth="874.0" style="-fx-background-color: #0288d1;" styleClass="dashboard-colour2" stylesheets="@../Css/Table.css">
               <columns>
                 <TableColumn fx:id="empColId" prefWidth="82.4000244140625" text="ID" />
                 <TableColumn fx:id="empColName" prefWidth="131.20001220703125" text="Name" />
