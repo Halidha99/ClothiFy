@@ -1,4 +1,4 @@
-package edu.icet.entity;
+package edu.icet.model;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @Getter
 @ToString
-public class SuppilesItemEntity {
+public class SuppilesItem {
     private String itemCode;
     private String description;
     private int qty;

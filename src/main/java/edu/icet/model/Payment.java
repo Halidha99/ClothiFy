@@ -1,4 +1,4 @@
-package edu.icet.entity;
+package edu.icet.model;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class PaymentEntity {
+public class Payment {
     private  String paymentId;
     private String date;
     private double payment;

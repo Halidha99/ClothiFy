@@ -1,4 +1,4 @@
-package edu.icet.entity;
+package edu.icet.model;
 
 import lombok.*;
 
@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @ToString
 
-public class SupplierEntity {
+public class Supplier {
     private String supplierId;
     private String tittle;
     private String supName;

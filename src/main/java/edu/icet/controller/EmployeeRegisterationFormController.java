@@ -1,18 +1,24 @@
 package edu.icet.controller;
 
+import edu.icet.model.Employee;
+import edu.icet.service.ServiceFactory;
+import edu.icet.service.SuperService;
+import edu.icet.service.custom.EmployeeService;
+import edu.icet.util.ServiceType;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 
-public class EmployeeRegisterationFormController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class EmployeeRegisterationFormController implements Initializable {
 
     @FXML
-    private ComboBox<?> cmbTitle;
+    private ComboBox<String> cmbTitle;
 
     @FXML
     private DatePicker dobEmpDate;
@@ -82,12 +88,43 @@ public class EmployeeRegisterationFormController {
     }
 
     @FXML
-    void btnDeleteOnAction(ActionEvent event) {
+   public void btnDeleteOnAction(ActionEvent event) {
+//        if (service.deleteCustomer(txtEmpId.getText())){
+//            new Alert(Alert.AlertType.INFORMATION,"Employee Deleted !!").show();
+//        }else{
+//            new Alert(Alert.AlertType.ERROR).show();
+//        }
+//    }
 
     }
 
     @FXML
-    void btnSaveOnAction(ActionEvent event) {
+  public  void btnSaveOnAction(ActionEvent event) {
+       EmployeeService employeeService = ServiceFactory.getInstance().getServiceType(ServiceType.EMPLOYEE);
+       Employee employee= new Employee(
+             txtEmpId.getText(),
+                cmbTitle.getValue(),
+                txtEmpname.getText(),
+                txtEmpNic.getText(),
+                txtEmpAddress.getText(),
+                dobEmpDate.getValue(),
+                txtEmpContact.getText(),
+                txtEmpBankAcc.getText(),
+                txtEmpBankBranch.getText()
+
+
+        );
+       // System.out.println(employee);
+        if (employeeService.addEmployee(employee)) {
+            new Alert(Alert.AlertType.INFORMATION,"Employee Added !!").show();
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Employee Not Added :(").show();
+        }
+
+clear();
+
+
+
 
     }
 
@@ -101,4 +138,23 @@ public class EmployeeRegisterationFormController {
 
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        ObservableList<String> tittle = FXCollections.observableArrayList();
+        tittle.add("MR");
+        tittle.add("MRS");
+        tittle.add("MIS");
+        cmbTitle.setItems(tittle);
+    }
+    private  void clear(){
+        txtEmpId.setText("");
+        txtEmpname.setText("");
+        txtEmpNic.setText("");
+        txtEmpAddress.setText("");
+        dobEmpDate.setValue(null);
+        txtEmpContact.setText("");
+        txtEmpBankAcc.setText("");
+        txtEmpBankBranch.setText("");
+
+    }
 }

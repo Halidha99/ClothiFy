@@ -1,4 +1,4 @@
-package edu.icet.entity;
+package edu.icet.model;
 
 import lombok.*;
 
@@ -9,8 +9,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @ToString
-public class EmployeeEntity {
-
+public class Employee {
     private String empId;
     private String title;
     private String name;
@@ -20,5 +19,6 @@ public class EmployeeEntity {
     private String contact;
     private String bankAcNo;
     private String bankBranch;
+
 
 }

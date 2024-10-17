@@ -1,13 +1,23 @@
 package edu.icet.controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class SupplierFormController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class SupplierFormController implements Initializable {
+
+    @FXML
+    private ComboBox<String> cmbSupplierTittle;
 
     @FXML
     private TableColumn<?, ?> colItemCode;
@@ -67,4 +77,12 @@ public class SupplierFormController {
 
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        ObservableList<String> supTittle = FXCollections.observableArrayList();
+        supTittle.add("MR");
+        supTittle.add("MRS");
+        supTittle.add("MISS");
+        cmbSupplierTittle.setItems(supTittle);
+    }
 }

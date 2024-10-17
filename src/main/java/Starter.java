@@ -12,7 +12,8 @@ public class Starter extends Application {
     public void start(Stage stage) throws Exception {
         stage.setTitle("Main Form");
         stage.setResizable(false);
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("View/login_form.fxml"))));
+       // stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("View/login_form.fxml"))));
+         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("View/employee_registeration_form.fxml"))));
         stage.show();
 
 

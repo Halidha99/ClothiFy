@@ -156,7 +156,7 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmpAddress" layoutX="570.0" layoutY="404.0" prefHeight="31.0" prefWidth="187.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="Galle">
+            <TextField fx:id="txtEmpAddress" layoutX="570.0" layoutY="404.0" prefHeight="31.0" prefWidth="187.0" promptText="Galle" style="-fx-background-color: rgba(245, 246, 250,1.0);">
                <font>
                   <Font size="15.0" />
                </font>
@@ -166,7 +166,7 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmpContact" layoutX="568.0" layoutY="531.0" prefHeight="31.0" prefWidth="187.0" promptText="Kamal" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="0776578963">
+            <TextField fx:id="txtEmpContact" layoutX="568.0" layoutY="531.0" prefHeight="31.0" prefWidth="187.0" promptText="0776578963" style="-fx-background-color: rgba(245, 246, 250,1.0);">
                <font>
                   <Font size="15.0" />
                </font>
@@ -188,7 +188,7 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmpBankAcc" layoutX="935.0" layoutY="404.0" prefHeight="31.0" prefWidth="168.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="80065789623">
+            <TextField fx:id="txtEmpBankAcc" layoutX="935.0" layoutY="404.0" prefHeight="31.0" prefWidth="168.0" promptText="80065789623" style="-fx-background-color: rgba(245, 246, 250,1.0);">
                <font>
                   <Font size="15.0" />
                </font>
@@ -198,7 +198,7 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmpBankBranch" layoutX="935.0" layoutY="462.0" prefHeight="31.0" prefWidth="168.0" promptText="19978006251" style="-fx-background-color: rgba(245, 246, 250,1.0);" text="Galle">
+            <TextField fx:id="txtEmpBankBranch" layoutX="935.0" layoutY="462.0" prefHeight="31.0" prefWidth="168.0" promptText="Galle" style="-fx-background-color: rgba(245, 246, 250,1.0);">
                <font>
                   <Font size="15.0" />
                </font>
